@@ -10,6 +10,28 @@ Lua Events can be called by any part of the code, and supply any kind of functio
 
 - - -
 
+## GUI events
+
+Events invoked by players' actions with GUI.
+
+### checkedChanged
+
+*Parameters: **none***
+
+Executed when the checkbox was checked or unchecked.
+
+### onPressed
+
+*Parameters: **none***
+
+Executed when the clickable GUI element was pressed.
+
+### onSubmit
+
+*Parameters: **none***
+
+Executed when the TextBox's input was submitted.
+
 ## Input events
 
 I don't think anything has to be said about these here, other than it'd be pretty difficult making a game without these.
@@ -50,7 +72,7 @@ This event is called every time a scroll wheel is scrolled.
 
 Action is used to tell if the button was released, or pressed.
 
-Key is the KEY enum which you can read about here (TODO: LINK)
+Key is the KEY enum which you can read about [here](enums.md).
 
 This event is obviously called every time a button is pressed.
 
@@ -63,6 +85,18 @@ These events allow for Lua scripts to slightly hook into BlurEngine's physics en
 *Parameters: **Tile** tile, **Vector** direction*
 
 This event is called every time the player object collides with a tile, the direction from which the player collides with the tile.
+
+### playerCollision
+
+*Parameters: **Vector** playerPos, **Vector** direction*
+
+Called when the player collides with a tile, *playerPos* being the player's position at the time of collision and *direction* being the direction from the player to the other tile.
+
+### onTileCollision
+
+*Parameters:  **Tile** tile, **Vector** direction*
+
+Called when a selected tile collides with another, *tile* is the tile being collided with, *direction* is the direction to it.
 
 ### doPhysics
 
