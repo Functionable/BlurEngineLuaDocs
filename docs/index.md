@@ -4,11 +4,16 @@
 
 - - -
 
+This wiki should be 99.9% accurate for the current release, which is Alpha 1.1.1!
+
 BlurEngine is a rather simple game engine, with the main scripting API being implemented in Lua.
 
 With that being said, welcome to the wiki!
 
 This is the rewrite of the previously, hastily written documentation wiki. Hopefully this will suffice to help ease people into the new updates.
+
+**Big thanks to Kip for helping me write this wiki!**
+**And of course, thanks for Bartekrabit for providing hosting!**
 
 - - -
 
