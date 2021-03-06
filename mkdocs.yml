@@ -7,10 +7,11 @@ nav:
     - "Introduction": index.md
     - "General Reference":
         - "Events": events.md
+        - "Classes": classes.md
+        - "Enums": enums.md
         - "Global Functions": functions.md
         - "Libraries": libraries/libraries.md
-    - "Guides":
-        - "Nothing here yet"
+    #- "Guides": 
     - "Contribute to this wiki": "https://github.com/Functionable/BlurEngineLuaDocs"
 theme:
     name: material
