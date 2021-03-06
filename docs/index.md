@@ -13,7 +13,8 @@ With that being said, welcome to the wiki!
 This is the rewrite of the previously, hastily written documentation wiki. Hopefully this will suffice to help ease people into the new updates.
 
 **Big thanks to Kip for helping me write this wiki!**
-**And of course, thanks for Bartekrabit for providing hosting!**
+
+**And of course, huge thanks to Bartekrabit for providing hosting!**
 
 - - -
 
