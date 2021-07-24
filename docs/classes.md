@@ -9,6 +9,7 @@
 #### Main
 
 **Vector** Position
+
 **Vector** Size
 
 #### Physics
@@ -17,25 +18,27 @@
 Does this tile collide with other objects?
 
 **bool** Static
-Does this tile get moved by physics?
+If true, this tile cannot be moved by physics.
 
 **Vector** Acceleration
 The rate at which this tile gains speed.
 
 **Vector** Velocity
+
 **Vector** VelocityCeiling
+
 **Vector** VelocityFloor
 
 #### Visual
 
 **Texture** Texture
+
 **TEXTUREMODE** TextureMode
 
 ### Functions
 
 **duplicate**
-
-*Parameters: **none***
+*Parameters: **none** *
 
 Creates a copy of this tile.
 
@@ -45,8 +48,11 @@ Creates a copy of this tile.
 All usable GUI elements have different features and thus their own classes.
 
 ### Shared members
+
 **Vector** Position
+
 **Vector** Size 
+
 **ALIGN** Alignment
 
 ### Button
@@ -54,7 +60,6 @@ All usable GUI elements have different features and thus their own classes.
 #### Functions
 
 **:setFont**
-
 *Parameters: **string** fontName, **int** fontSize*
 
 Sets the font type and size used to display this Button's text.
@@ -73,26 +78,24 @@ Sets the font type and size used to display this Button's text.
 The number of points displayed on the graph.
 
 **number** BottomValue
+
 **number** TopValue
+
 **string** Title
 
 #### Functions
 
 **addData**
-
 *Parameters: **int** dataPoint*
 
 **addMarker**
-
 *Parameters: **int** marker*
 
 **resetData**
-
-*Parameters: **none***
+*Parameters: **none** *
 
 **resetMarker**
-
-*Parameters: **none***
+*Parameters: **none** *
 
 ### Label
 
@@ -103,7 +106,6 @@ The number of points displayed on the graph.
 #### Functions
 
 **:setFont**
-
 *Parameters: **string** fontName, **int** fontSize*
 
 Sets the font type and size used to display this Label's text.
@@ -119,7 +121,9 @@ Sets the font type and size used to display this Label's text.
 #### Fields
 
 **int** Value
+
 **int** MinValue
+
 **int** MaxValue
 
 ### Textbox
@@ -137,8 +141,7 @@ Sets the font type and size used to display this Label's text.
 Sets the font type and size used to display this Textbox's text.
 
 **submit**
-
-*Parameters: **none***
+*Parameters: **none** *
 
 Submit the current input text.
 

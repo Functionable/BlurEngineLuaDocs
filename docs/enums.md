@@ -4,7 +4,7 @@
 
 ## TEXTUREMODE
 
-Used to change the way the textures tiles larger than 1x1 units are rendered.
+Used to change the way the textures of tiles larger than 1x1 units are rendered.
 
 ### TEXTUREMODE_STRETCH
 
@@ -44,7 +44,7 @@ The button type every passiveInput event after BUTTON_PRESS if the button is sti
 
 ### MOUSE_BUTTON_0 - MOUSE_BUTTON_8
 
-Different buttons on a mouse, from left mouse button to mouse button 8
+Different buttons on a mouse, from left mouse button to mouse button 8.
 
 ## KEY
 

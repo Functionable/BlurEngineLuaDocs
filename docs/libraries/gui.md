@@ -8,15 +8,11 @@
 
 Adds the *gui* to the render queue.
 
-
-
 ## gui.unregister
 
 *Parameters: **GUI** gui*
 
 Removes the *gui* from the render queue.
-
-
 
 ## gui.new
 

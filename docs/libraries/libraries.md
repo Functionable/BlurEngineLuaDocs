@@ -24,7 +24,7 @@
 ## debug library
 *Not to be confused with Lua's debug library, which is separate from blur's debug library*
 
-This one isn't finished yet
+*For documentation please click [here](debug.md)*
 
 - - -
 

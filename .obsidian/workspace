@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "0ee677d5a2fed7a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "0655e2156fcd78e1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/libraries/blf.md",
+            "mode": "source"
+          }
+        },
+        "group": "fd35ffd12b8b3ec0"
+      },
+      {
+        "id": "3ab49c922243d82c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/libraries/blf.md",
+            "mode": "preview"
+          }
+        },
+        "group": "fd35ffd12b8b3ec0"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e02e3e97f75df96f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebbaa1371d5330d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c0801934a3225d9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "fbf539f6ed176e9d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "87a58910a39683e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "464a527d0733a1d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84fdb62b4b3163a5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/libraries/blf.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0655e2156fcd78e1",
+  "lastOpenFiles": [
+    "docs/libraries/blf.md",
+    "docs/libraries/content.md",
+    "docs/libraries/debug.md",
+    "docs/libraries/event.md",
+    "docs/libraries/gui.md",
+    "docs/libraries/libraries.md",
+    "docs/libraries/mouse.md",
+    "docs/classes.md",
+    "docs/enums.md",
+    "docs/index.md"
+  ]
+}

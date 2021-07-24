@@ -16,19 +16,19 @@ Events invoked by players' actions with GUI.
 
 ### checkedChanged
 
-*Parameters: **none***
+*Parameters: **none** *
 
 Executed when the checkbox was checked or unchecked.
 
 ### onPressed
 
-*Parameters: **none***
+*Parameters: **none** *
 
 Executed when the clickable GUI element was pressed.
 
 ### onSubmit
 
-*Parameters: **none***
+*Parameters: **none** *
 
 Executed when the TextBox's input was submitted.
 
@@ -41,39 +41,31 @@ I don't think anything has to be said about these here, other than it'd be prett
 *Parameters: **int** X, **int** Y*
 
 These are the absolute position of the mouse on the screen, not the delta position.
-
 This event is called every time the mouse is moved on the screen.
 
 ### mouseClick
 
 *Parameters: **BUTTON** key, **BUTTON_ACTION** action, **int** mods*
 
-Key is the BUTTON enum which you can read about here (TODO: LINK)
-
-Action is used to tell if the button was pressed, released, or held.
-
-The mods parameter indicates whether keys like SHIFT or CTRL were also being pressed.
-
 This event is called every time a button on the mouse is pressed.
+Key is the BUTTON [enum](enums.md). 
+Action is used to tell if the button was pressed, released, or held.
+The mods parameter indicates whether keys like SHIFT or CTRL were also being pressed.
 
 ### mouseScroll
 
 *Parameters: **int** xscroll, **int** yscroll*
 
-xscroll is used for devices that can scroll to the left/right
-
-yscroll is what you most likely want to use. (Note: not always 1 or -1, you might want to clamp it if you're going to use this as a multiplier)
-
 This event is called every time a scroll wheel is scrolled.
+*xscroll* is used for devices that can scroll to the left/right
+*yscroll* is what you most likely want to use. (Note: not always 1 or -1, you might want to clamp it if you're going to use this as a multiplier)
 
 ### passiveInput
 
 *Parameters: **KEY** key, **BUTTON_ACTION** action*
 
 Action is used to tell if the button was released, or pressed.
-
-Key is the KEY enum which you can read about [here](enums.md).
-
+Key is the KEY [enum](enums.md).
 This event is obviously called every time a button is pressed.
 
 ## Physics events
