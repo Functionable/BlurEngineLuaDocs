@@ -4,13 +4,13 @@
 
 ## mouse.getTarget
 
-*Returns: **Tile** tile*
+*Returns: __Tile__ tile*
 
 Returns the current tile hovered on by the mouse.
 
 ## mouse.getPosition
 
-*Returns: **Vector** screenPosition*
+*Returns: __Vector__ screenPosition*
 
 Returns the position of the mouse on the screen.
 

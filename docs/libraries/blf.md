@@ -4,25 +4,25 @@
 
 ## blf.findSaves
 
-*Returns: **table** existingSaves*
+*Returns: __table__ existingSaves*
 
 Gets a table of all blf file names in the saves folder.
 
 ## blf.load
 
-*Parameters: **string** fileName*
-*Returns: **table** objects*
+*Parameters: __string__ fileName*
+*Returns: __table__ objects*
 
 Reads a blf file at *saves / fileName* and returns all objects as a table.
 
 ## blf.save
 
-*Parameters: **string** fileName, **table** objects*
+*Parameters: __string__ fileName, __table__ objects*
 
 Writes the *objects* table into a blf file named *fileName*.
 
 ## blf.version
 
-*Returns: **string** blfVersion*
+*Returns: __string__ blfVersion*
 
 Returns the version of BLF somehow (Ask zmateusz).

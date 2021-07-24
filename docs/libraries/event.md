@@ -6,18 +6,20 @@
 
 ## event.call
 
-*Parameters: **string** eventName, **any** arguments*
+*Parameters: __string__ eventName, __any__ arguments*
 
 Calls *eventName* with *arguments*.
 
 ## event.link
 
-*Parameters: **string** eventName, **string** uniqueIdentifier, **function** function*
+*Parameters: __string__ eventName, __string__ uniqueIdentifier, __function__ function*
 
 Links *function* to the *eventName* given in the event system.
 
+*uniqueIdentifier* can be any string.
+
 ## event.register
 
-*Parameters: **string** eventName*
+*Parameters: __string__ eventName*
 
 Registers the *eventName* in the event manager.

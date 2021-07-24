@@ -14,14 +14,14 @@ Currently there are two of them, but they're some of the most important.
 
 ### tile.new
 
-*Parameters: **Vector** position, **Texture** texture*
+*Parameters: __Vector__ position, __Texture__ texture*
 *Returns: **Tile** addedTile*
 
 Adds a new tile at *position*, with the *texture* texture and returns it.
 
 ### tile.remove
 
-*Parameters: **Tile** targetTile*
+*Parameters: __Tile__ targetTile*
 
 Removes *targetTile*.
 Currently still removeTile.
@@ -32,20 +32,20 @@ These functions can be used to display useful debug messages in the game view or
 
 ### print
 
-*Parameters: **any** value*
+*Parameters: __any__ value*
 
 Displays *value* in the command prompt which runs alongside the game view.
 
 ### displayMessage
 
-*Parameters: **string** message*
+*Parameters: __string__ message*
 
 Displays *message* in the engine's logging UI.
 Deprecated.
 
 ### displayMessageWithTime
 
-*Parameters: **string** message, **number** length*
+*Parameters: __string__ message, __number__ length*
 
 Displays *message* in the engine's logging UI, fading away after *length* seconds.
 Deprecated.
@@ -56,33 +56,33 @@ Used mostly to get constants, for delays and conversion.
 
 ### getBuildNumber
 
-*Returns: **int** buildNumber*
+*Returns: __int__ buildNumber*
 
 Returns the current build number with each new release being 1 greater than the last.
 
 ### getVersionString
 
-*Returns: **string** version*
+*Returns: __string__ version*
 
 Returns the current version as a string in the form of 1.2.3.
 
 ### delay
 
-*Parameters: **number** delay, **function** delayedFunc*
+*Parameters: __number__ delay, __function__ delayedFunc*
 
 Executes *delayedFunc* in *delay* seconds.
 
 ### getDeltaTime
 
-*Returns: **number** deltaTime*
+*Returns: __number__ deltaTime*
 
 Returns delta time of current frame, should be used in physics/render events.
 Multiply by 10 to convert it to seconds.
 
 ### toWorldVector
 
-*Parameters: **Vector** screenCoordinates*
-*Returns: **Vector** convertedCoordinates*
+*Parameters: __Vector__ screenCoordinates*
+*Returns: __Vector__ convertedCoordinates*
 
 Converts a screen coordinate, usually from the mouse, into a coordinate in the world.
 
@@ -92,19 +92,19 @@ Modify the game view or application window.
 
 ### setBackgroundColor
 
-*Parameters: **number** r, **number** g, **number** b*
+*Parameters: __number__ r, __number__ g, __number__ b*
 
 Sets the game view's background color to a new RGB color created from *r*, *g* and *b*.
 
 ### setTitle
 
-*Parameters: **string** newTitle*
+*Parameters: __string__ newTitle*
 
 Sets the window's title text to *newTitle*.
 
 ### setIcon
 
-*Parameters: **Texture** newIcon*
+*Parameters: __Texture__ newIcon*
 
 Sets the window's icon to *newIcon*.
 
@@ -112,13 +112,13 @@ Sets the window's icon to *newIcon*.
 
 ### camera.setPosition
 
-*Parameters: **Vector** newPosition*
+*Parameters: __Vector__ newPosition*
 
 Moves the game camera to *newPosition*.
 
 ### camera.track
 
-*Parameters: **Tile** target*
+*Parameters: __Tile__ target*
 
 Makes the camera follow *target*.
 
@@ -128,68 +128,68 @@ Player functions affect only the player tile, which, for some reason, is treated
 
 ### setEngineMovementState
 
-*Parameters: **bool** movementState*
+*Parameters: __bool__ movementState*
 
 Enables or disables the engine's pre-existing top-down movement.
 
 ### getPlayerMovementDirection
 
-*Returns: **Vector** playerMovementDirection*
+*Returns: __Vector__ playerMovementDirection*
 
 ### setPlayerCollisions
 
-*Parameters: **bool** collide*
+*Parameters: __bool__ collide*
 
 Enables or disables the player tile's collider.
 
 ### getPlayerPos
 
-*Returns: **Vector** playerPos*
+*Returns: __Vector__ playerPos*
 
 ### setPlayerPos
 
-*Parameters: **Vector** newPlayerPos*
+*Parameters: __Vector__ newPlayerPos*
 
 ### getPlayerTexture
 
-*Returns: **Texture** playerTexture*
+*Returns: __Texture__ playerTexture*
 
 ### setPlayerTexture
 
-*Parameters: **Texture** newPlayerTexture*
+*Parameters: __Texture__ newPlayerTexture*
 
 ### getPlayerVelocity
 
-*Returns: **Vector** playerVelocity*
+*Returns: __Vector__ playerVelocity*
 
 ### setPlayerVelocity
 
-*Parameters: **Vector** newPlayerVelocity*
+*Parameters: __Vector__ newPlayerVelocity*
 
 ### getPlayerVelocityFloor
 
-*Returns: **Vector** playerVelocityFloor*
+*Returns: __Vector__ playerVelocityFloor*
 
 ### setPlayerVelocityFloor
 
-*Parameters: **Vector** newPlayerVelocityFloor*
+*Parameters: __Vector__ newPlayerVelocityFloor*
 
 ### getPlayerVelocityCeiling
 
-*Returns: **Vector** playerVelocityCeiling*
+*Returns: __Vector__ playerVelocityCeiling*
 
 ### setPlayerVelocityCeiling
 
-*Parameters: **Vector** newPlayerVelocityCeiling*
+*Parameters: __Vector__ newPlayerVelocityCeiling*
 
 ### getPlayerDrag
 
-*Returns: **Vector** playerDrag*
+*Returns: __Vector__ playerDrag*
 
 This is actually 'acceleration'.
 
 ### setPlayerDrag
 
-*Parameters: **Vector** newPlayerDrag*
+*Parameters: __Vector__ newPlayerDrag*
 
 This is actually 'acceleration'.

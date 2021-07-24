@@ -4,29 +4,29 @@
 
 ## gui.register
 
-*Parameters: **GUI** gui*
+*Parameters: __GUI__ gui*
 
 Adds the *gui* to the render queue.
 
 ## gui.unregister
 
-*Parameters: **GUI** gui*
+*Parameters: __GUI__ gui*
 
 Removes the *gui* from the render queue.
 
 ## gui.new
 
-*Parameters: **string** type*
+*Parameters: __string__ type*
 
-*Returns: **GUI** gui*
+*Returns: __GUI__ gui*
 
-Creates and returns a new **GUI** of *type*.
+Creates and returns a new __GUI__ of *type*.
 
 ## gui.newObject
 
-*Parameters: **string** type*
+*Parameters: __string__ type*
 
-*Returns: **GUIObject** guiObject*
+*Returns: __GUIObject__ guiObject*
 
-Creates and returns a new **GUIObject** of *type*.
+Creates and returns a new __GUIObject__ of *type*.
 

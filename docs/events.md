@@ -10,25 +10,25 @@ Lua Events can be called by any part of the code, and supply any kind of functio
 
 - - -
 
-## GUI events
+## GUI methods
 
 Events invoked by players' actions with GUI.
 
-### checkedChanged
+### :checkedChanged
 
-*Parameters: **none** *
+*Parameters: __none__*
 
 Executed when the checkbox was checked or unchecked.
 
-### onPressed
+### :onPressed
 
-*Parameters: **none** *
+*Parameters: __none__*
 
 Executed when the clickable GUI element was pressed.
 
-### onSubmit
+### :onSubmit
 
-*Parameters: **none** *
+*Parameters: __none__*
 
 Executed when the TextBox's input was submitted.
 
@@ -38,14 +38,14 @@ I don't think anything has to be said about these here, other than it'd be prett
 
 ### mouseMove
 
-*Parameters: **int** X, **int** Y*
+*Parameters: __int__ X, __int__ Y*
 
 These are the absolute position of the mouse on the screen, not the delta position.
 This event is called every time the mouse is moved on the screen.
 
 ### mouseClick
 
-*Parameters: **BUTTON** key, **BUTTON_ACTION** action, **int** mods*
+*Parameters: __BUTTON__ key, __BUTTON_ACTION__ action, __int__ mods*
 
 This event is called every time a button on the mouse is pressed.
 Key is the BUTTON [enum](enums.md). 
@@ -54,7 +54,7 @@ The mods parameter indicates whether keys like SHIFT or CTRL were also being pre
 
 ### mouseScroll
 
-*Parameters: **int** xscroll, **int** yscroll*
+*Parameters: __int__ xscroll, __int__ yscroll*
 
 This event is called every time a scroll wheel is scrolled.
 *xscroll* is used for devices that can scroll to the left/right
@@ -62,7 +62,7 @@ This event is called every time a scroll wheel is scrolled.
 
 ### passiveInput
 
-*Parameters: **KEY** key, **BUTTON_ACTION** action*
+*Parameters: __KEY__ key, __BUTTON_ACTION__ action*
 
 Action is used to tell if the button was released, or pressed.
 Key is the KEY [enum](enums.md).
@@ -72,29 +72,33 @@ This event is obviously called every time a button is pressed.
 
 These events allow for Lua scripts to slightly hook into BlurEngine's physics engine.
 
-### playerCollision
+### doPhysics
 
-*Parameters: **Tile** tile, **Vector** direction*
+*Parameters: __none__*
+
+If you're planning to do anything physics related every frame, I strongly recommend using this event rather than render, due to it being run in a different rendering phase, which might make whatever you're doing appear less wobbly.
+
+## Physics methods
+
+These are members of tiles.
+
+### :onTileCollision
+
+*Parameters:  __Tile__ tile, __Vector__ direction*
+
+Called when this tile collides with another, *tile* is the tile being collided with, *direction* is the direction to it.
+
+### [DEPRECATED] :playerCollision
+
+*Parameters: __Tile__ tile, __Vector__ direction*
 
 This event is called every time the player object collides with a tile, the direction from which the player collides with the tile.
 
-### playerCollision
+### [DEPRECATED] :playerCollision
 
-*Parameters: **Vector** playerPos, **Vector** direction*
+*Parameters: __Vector__ playerPos, __Vector__ direction*
 
 Called when the player collides with a tile, *playerPos* being the player's position at the time of collision and *direction* being the direction from the player to the other tile.
-
-### onTileCollision
-
-*Parameters:  **Tile** tile, **Vector** direction*
-
-Called when a selected tile collides with another, *tile* is the tile being collided with, *direction* is the direction to it.
-
-### doPhysics
-
-*Parameters: **none**.*
-
-If you're planning to do anything physics related every frame, I strongly recommend using this event rather than render, due to it being run in a different rendering phase, which might make whatever you're doing appear less wobbly.
 
 ## Screen events
 
@@ -102,12 +106,12 @@ These events are called to update GUIs or whatever else might depend on screen s
 
 ### render
 
-*Parameters: **none**.*
+*Parameters: __none__*
 
 This event is called every frame.
 
 ### screenResize
 
-*Parameters: **int** screenWidth, **int** screenHeight*
+*Parameters: __int__ screenWidth, __int__ screenHeight*
 
 This event is called every time the window/screen is resized.

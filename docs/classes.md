@@ -15,12 +15,15 @@
 #### Physics
 
 **bool** CollisionsEnabled
+
 Does this tile collide with other objects?
 
 **bool** Static
+
 If true, this tile cannot be moved by physics.
 
 **Vector** Acceleration
+
 The rate at which this tile gains speed.
 
 **Vector** Velocity
@@ -38,10 +41,10 @@ The rate at which this tile gains speed.
 ### Functions
 
 **duplicate**
-*Parameters: **none** *
+
+*Parameters: __none__*
 
 Creates a copy of this tile.
-
 
 ## GUI
 
@@ -60,7 +63,8 @@ All usable GUI elements have different features and thus their own classes.
 #### Functions
 
 **:setFont**
-*Parameters: **string** fontName, **int** fontSize*
+
+*Parameters: __string__ fontName, __number__ fontSize*
 
 Sets the font type and size used to display this Button's text.
 
@@ -75,6 +79,7 @@ Sets the font type and size used to display this Button's text.
 #### Fields
 
 **int** DisplayedCount
+
 The number of points displayed on the graph.
 
 **number** BottomValue
@@ -86,16 +91,20 @@ The number of points displayed on the graph.
 #### Functions
 
 **addData**
-*Parameters: **int** dataPoint*
+
+*Parameters: __int__ dataPoint*
 
 **addMarker**
-*Parameters: **int** marker*
+
+*Parameters: __int__ marker*
 
 **resetData**
-*Parameters: **none** *
+
+*Parameters: __none__ *
 
 **resetMarker**
-*Parameters: **none** *
+
+*Parameters: __none__ *
 
 ### Label
 
@@ -106,7 +115,8 @@ The number of points displayed on the graph.
 #### Functions
 
 **:setFont**
-*Parameters: **string** fontName, **int** fontSize*
+
+*Parameters: __string__ fontName, __int__ fontSize*
 
 Sets the font type and size used to display this Label's text.
 
@@ -136,12 +146,13 @@ Sets the font type and size used to display this Label's text.
 
 **:setFont**
 
-*Parameters: **string** fontName, **int** fontSize*
+*Parameters: __string__ fontName, __int__ fontSize*
 
 Sets the font type and size used to display this Textbox's text.
 
 **submit**
-*Parameters: **none** *
+
+*Parameters: __none__*
 
 Submit the current input text.
 
