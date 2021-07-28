@@ -122,8 +122,11 @@ Moves the game camera to *newPosition*.
 
 Makes the camera follow *target*.
 
-## [DEPRECATED] Player functions
-
+## Player functions
+!!! warning
+	Player functions, including the player were deprecated and removed in Alpha 1.2.0
+	
+	
 Player functions affect only the player tile, which, for some reason, is treated separately from other tiles.
 
 ### setEngineMovementState

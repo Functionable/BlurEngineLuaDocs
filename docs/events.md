@@ -90,12 +90,6 @@ Called when this tile collides with another, *tile* is the tile being collided w
 
 ### [DEPRECATED] :playerCollision
 
-*Parameters: __Tile__ tile, __Vector__ direction*
-
-This event is called every time the player object collides with a tile, the direction from which the player collides with the tile.
-
-### [DEPRECATED] :playerCollision
-
 *Parameters: __Vector__ playerPos, __Vector__ direction*
 
 Called when the player collides with a tile, *playerPos* being the player's position at the time of collision and *direction* being the direction from the player to the other tile.

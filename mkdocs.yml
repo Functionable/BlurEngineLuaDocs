@@ -1,5 +1,9 @@
 site_name: BlurEngine
 use_directory_urls: false
+markdown_extensions:
+    - pymdownx.superfences
+    - admonition
+    - pymdownx.details
 plugins:
     - search
     - localsearch
@@ -10,10 +14,20 @@ nav:
         - "Classes": classes.md
         - "Enums": enums.md
         - "Global Functions": functions.md
-        - "Libraries": libraries/libraries.md
+
+    - "Libraries": 
+        - "index": libraries/libraries.md
+        - "BLF": libraries/blf.md
+        - "event": libraries/event.md
+        - "GUI": libraries/gui.md
+        - "debug": libraries/debug.md
+        - "mouse": libraries/mouse.md
+
     #- "Guides": 
-    - "Contribute to this wiki": "https://github.com/Functionable/BlurEngineLuaDocs"
+    - "Contribute": "https://github.com/Functionable/BlurEngineLuaDocs"
 theme:
+    features:
+        - navigation.tabs
     name: material
     icon:
         logo: images/logo

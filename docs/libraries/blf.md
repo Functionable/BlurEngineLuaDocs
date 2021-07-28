@@ -17,12 +17,21 @@ Reads a blf file at *saves / fileName* and returns all objects as a table.
 
 ## blf.save
 
-*Parameters: __string__ fileName, __table__ objects*
+!!! info
+    This function will attempt to save it in a `saves/` folder.
+
+!!! bug
+    Writing a BLF file will fail if the saves directory is not present.
 
 Writes the *objects* table into a blf file named *fileName*.
 
+| Prameter | Type   | Description               | Example        | Required |
+| -------- | ------ | ------------------------- | -------------- | -------- |
+| fileName | string | Name of the file saved to | "level.blf"    | yes      |
+| objects  | table  | Table of objects saved    | Table of tiles | yes      |
+
 ## blf.version
 
-*Returns: __string__ blfVersion*
-
-Returns the version of BLF somehow (Ask zmateusz).
+| Returned | Type   | Description               | Example |
+| -------- | ------ | ------------------------- | ------- |
+| version  | string | The BLF Version available | "1.0.0" |

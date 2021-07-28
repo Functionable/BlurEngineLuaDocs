@@ -3,11 +3,16 @@
 [TOC]
 
 ## content library
+!!! warning
+    The content library is no longer available in Alpha 1.2.0.
+    All functions were renamed and moved.
+
 *For documentation please click [here](content.md)*
 
 ## os library
 
-*The only function from this library that's included is os.time*
+!!! info 
+    Only includes `os.time`
 
 ## event library
 
@@ -22,7 +27,8 @@
 *For documentation please click [here](gui.md)*
 
 ## debug library
-*Not to be confused with Lua's debug library, which is separate from blur's debug library*
+!!! info 
+    Not to be confused with Lua's debug library, which is separate from blur's debug library
 
 *For documentation please click [here](debug.md)*
 

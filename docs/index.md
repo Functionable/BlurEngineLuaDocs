@@ -4,7 +4,7 @@
 
 - - -
 
-This wiki should be 99.9% accurate for the current release, which is Alpha 1.1.1!
+This wiki should be 99.9% accurate for the current preview version: Alpha 1.2.0-pre2
 
 BlurEngine is a rather simple game engine, with the main scripting API being implemented in Lua.
 
