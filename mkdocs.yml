@@ -1,5 +1,8 @@
 site_name: BlurEngine
 use_directory_urls: false
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences
 plugins:
     - search
     - localsearch
