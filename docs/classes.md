@@ -46,9 +46,45 @@ Creates a copy of this tile.
 
 ## GUI
 
+There are different types of GUI that have their own classes.
+
+### Shared properties
+
+**Vector** Position
+
+**Vector** Size 
+
+**ALIGN** Alignment
+
+### Shared methods
+
+**addObject**
+
+*Parameters: __GUIObject__* object
+
+Adds a GUIObject to the parent GUI class object.
+
+### GUI
+
+Normal GUI class, includes a square frame with no additional features.
+
+#### WindowGUI
+
+Includes a square frame with additional features such as dragging, resizing, a title and close button .
+
+#### RoundedGUI
+
+Includes a rounded frame with no additional features.
+
+#### GUIObject
+
 All usable GUI elements have different features and thus their own classes.
 
-### Shared members
+## GUIObject
+
+There are many different GUIObjects that differ in function, thus they have their own classes.
+
+### Shared properties
 
 **Vector** Position
 
@@ -65,6 +101,21 @@ All usable GUI elements have different features and thus their own classes.
 *Parameters: __string__ fontName, __number__ fontSize*
 
 Sets the font type and size used to display this Button's text.
+
+**:onPressed**
+
+Parameters: **none**
+
+This function is fired when the button is clicked. You have to define it like so:
+
+```lua
+-- Let button be a GUIObject of class Button
+function button:onPressed()
+	print("I just got pressed!")
+end
+```
+
+
 
 ### Checkbox
 
@@ -159,3 +210,6 @@ Submit the current input text.
 #### Fields
 
 **Texture** Texture
+
+
+

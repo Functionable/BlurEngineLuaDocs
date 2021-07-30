@@ -1,9 +1,10 @@
 site_name: BlurEngine Lua
 use_directory_urls: false
 markdown_extensions:
+    - pymdownx.details
+    - pymdownx.highlight
     - pymdownx.superfences
     - admonition
-    - pymdownx.details
 plugins:
     - search
     - localsearch
