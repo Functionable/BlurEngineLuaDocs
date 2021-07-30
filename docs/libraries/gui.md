@@ -1,7 +1,5 @@
 # gui library
 
-[TOC]
-
 ## gui.register
 
 *Parameters: __GUI__ gui*

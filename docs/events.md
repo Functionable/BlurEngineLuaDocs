@@ -1,12 +1,11 @@
 # Events
 
-*If you're looking for the event library, go [here](libraries/event.md).*
+!!! note
+    *If you're looking for the event library, [click here](libraries/event.md).*
 
 BlurEngine has a rudimentary event system. This page should cover most, if not all events.
 
 Lua Events can be called by any part of the code, and supply any kind of function. You can call these, but you really should be calling custom ones instead.
-
-[TOC]
 
 - - -
 

@@ -4,8 +4,6 @@ There are many global functions with different applications.
 
 Most of them affect either the player tile or the game window, as well as providing some kind of useful functionality.
 
-[TOC]
-
 - - -
 
 ## Tile functions

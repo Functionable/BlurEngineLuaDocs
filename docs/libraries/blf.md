@@ -1,19 +1,26 @@
 # BLF library
 
-[TOC]
+The BLF library is responsible for saving and loading using BLF, which is BlurEngine's own file format which can be used to store various data structures to aid the storage of level data.
 
 ## blf.findSaves
 
-*Returns: __table__ existingSaves*
+*Gets a table of all blf file names in the saves folder.*
 
-Gets a table of all blf file names in the saves folder.
+| Returned  | Type   | Description                    | Example              |
+| --------- | ------ | ------------------------------ | -------------------- |
+| filePaths | table  | Table of .blf file paths found | {"saves/level1.blf"} |
 
 ## blf.load
 
-*Parameters: __string__ fileName*
-*Returns: __table__ objects*
+*Reads a blf file at `saves/fileName` and returns all objects as a table.*
 
-Reads a blf file at *saves / fileName* and returns all objects as a table.
+| Parameter | Type   | Description               | Example        | Required |
+| --------- | ------ | ------------------------- | -------------- | -------- |
+| fileName  | string | Name of the level loaded  | "level.blf"    | yes      |
+
+| Returned | Type   | Description                   | Example          |
+| -------- | ------ | ----------------------------- | ---------------- |
+| objects  | table  | Table of objects in the level | A table of tiles |
 
 ## blf.save
 
@@ -23,12 +30,12 @@ Reads a blf file at *saves / fileName* and returns all objects as a table.
 !!! bug
     Writing a BLF file will fail if the saves directory is not present.
 
-Writes the *objects* table into a blf file named *fileName*.
+*Writes the *objects* table into a blf file named *fileName*.*
 
-| Prameter | Type   | Description               | Example        | Required |
-| -------- | ------ | ------------------------- | -------------- | -------- |
-| fileName | string | Name of the file saved to | "level.blf"    | yes      |
-| objects  | table  | Table of objects saved    | Table of tiles | yes      |
+| Parameter | Type   | Description               | Example        | Required |
+| --------- | ------ | ------------------------- | -------------- | -------- |
+| fileName  | string | Name of the file saved to | "level.blf"    | yes      |
+| objects   | table  | Table of objects saved    | Table of tiles | yes      |
 
 ## blf.version
 

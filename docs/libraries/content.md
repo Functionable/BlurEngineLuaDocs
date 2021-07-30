@@ -1,15 +1,30 @@
-# content library
+# Content
 
-[TOC]
+!!! warning
+    This library is deprecated and it is likely it won't exist in future versions of BlurEngine.
 
 ## include
 
-*Parameters: __string__ filePath*
+!!! info
+    This function was `content.loadScript` prior to the removal of the `content` library.
+
 Loads the script from *scripts / filePath* and executes it
+
+| Parameter | Type   | Description                     | Example        | Required |
+| --------- | ------ | ------------------------------- | -------------- | -------- |
+| filePath  | string | Path of the lua script to load  | "script2.lua"  | yes      |
 
 ## texture.load
 
-*Parameters: __string__ filepath*
-*Returns: __Texture__ texture*
+!!! info
+    This function was `content.loadTexture` prior to the removal of the `content` library.
 
-Loads a texture from *content / filePath*, and then returns it.
+Loads a texture from `content/`*`filePath`*, and then returns it.
+
+| Parameter | Type   | Description                 | Example        | Required |
+| --------- | ------ | --------------------------- | -------------- | -------- |
+| filePath  | string | Path of the texture loaded  | "crate.png"    | yes      |
+
+| Returned | Type    | Description        | Example          |
+| -------- | ------- | ------------------ | ---------------- |
+| texture  | Texture | The loaded texture |                  |

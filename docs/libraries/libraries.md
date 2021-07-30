@@ -1,7 +1,5 @@
 # Libraries
 
-[TOC]
-
 ## content library
 !!! warning
     The content library is no longer available in Alpha 1.2.0.
@@ -13,6 +11,10 @@
 
 !!! info 
     Only includes `os.time`
+
+### blf library
+
+*For documentation please click [here](blf.md)*
 
 ## event library
 

@@ -1,7 +1,5 @@
 # debug library
 
-[TOC]
-
 ## debug.displayFramerate
 
 *Parameters: __bool__ state*

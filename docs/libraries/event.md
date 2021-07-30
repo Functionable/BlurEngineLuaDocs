@@ -1,8 +1,6 @@
-# event library
+# Event Library
 
 *If you were looking for global events, click [here](../events.md).*
-
-[TOC]
 
 ## event.call
 
