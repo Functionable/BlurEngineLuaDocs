@@ -4,8 +4,6 @@ There are many global functions with different applications.
 
 Most of them affect either the player tile or the game window, as well as providing some kind of useful functionality.
 
-[TOC]
-
 - - -
 
 ## Tile functions
@@ -122,8 +120,11 @@ Moves the game camera to *newPosition*.
 
 Makes the camera follow *target*.
 
-## [DEPRECATED] Player functions
-
+## Player functions
+!!! warning
+	Player functions, including the player were deprecated and removed in Alpha 1.2.0
+	
+	
 Player functions affect only the player tile, which, for some reason, is treated separately from other tiles.
 
 ### setEngineMovementState

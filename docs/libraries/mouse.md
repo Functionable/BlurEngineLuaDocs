@@ -1,7 +1,5 @@
 # mouse library
 
-[TOC]
-
 ## mouse.getTarget
 
 *Returns: __Tile__ tile*

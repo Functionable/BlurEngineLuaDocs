@@ -1,7 +1,5 @@
 # Enumerators
 
-[TOC]
-
 ## TEXTUREMODE
 
 Used to change the way the textures of tiles larger than 1x1 units are rendered.

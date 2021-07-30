@@ -1,7 +1,5 @@
 # GUI
 
-[TOC]
-
 For GUI class objects check out [this entry.](../classes.md#gui)
 
 # gui library
