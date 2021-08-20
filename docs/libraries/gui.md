@@ -83,4 +83,10 @@ gui.register(mainGUI)
 
 Simple, right?
 
+Here's the result of our code:
+
+<img src="C:\Users\maxba\Desktop\Blur\BlurEngineLuaDocs\docs\images\guiexample.png" alt="image-20210820225258533" align="left"  />
+
+
+
 This is a basic GUI, you can't interact with it yet and it doesn't look to pretty. To see how to do stuff like changing fonts or adding button functions, check out the [GUI class.](../classes.md#gui)
