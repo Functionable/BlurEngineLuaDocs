@@ -8,6 +8,7 @@ markdown_extensions:
 plugins:
     - search
     - localsearch
+    - section-index
 nav:
     - "Introduction": index.md
     - "General Reference":
@@ -24,7 +25,9 @@ nav:
         - "debug": libraries/debug.md
         - "mouse": libraries/mouse.md
 
-    - "Guides"
+    - "Tutorials":
+        - tutorials/index.md
+        - "Introduction to GUI": tutorials/gui-basics.md
     - "Contribute": "https://github.com/Functionable/BlurEngineLuaDocs"
 theme:
     features:
