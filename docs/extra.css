@@ -1,0 +1,32 @@
+.md-typeset__table {
+   min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
+.md-typeset table:not([class]) th {
+    font-weight: normal;
+    padding: .3375em 1em;
+    background-color: rgb(230, 230, 230);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+    font-weight: normal;
+    padding: .3375em 1em;
+    background-color: #3e404f;
+}
+
+.md-typeset__scrollwrap {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+[data-md-color-scheme="slate"] #blur-logo-light {
+    display: none;
+}
+
+[data-md-color-scheme="default"] #blur-logo-dark {
+    display: none;
+}

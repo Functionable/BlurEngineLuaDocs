@@ -1,29 +1,90 @@
 site_name: BlurEngine Lua
 use_directory_urls: false
+extra_css: [extra.css]
 markdown_extensions:
     - pymdownx.details
     - pymdownx.highlight
     - pymdownx.superfences
     - admonition
+    - meta
 plugins:
     - search
     - localsearch
     - section-index
+    - include_dir_to_nav
 nav:
     - "Introduction": index.md
-    - "General Reference":
-        - "Events": events.md
-        - "Classes": classes.md
-        - "Enums": enums.md
-        - "Global Functions": functions.md
 
-    - "Libraries": 
-        - "index": libraries/libraries.md
-        - "BLF": libraries/blf.md
-        - "event": libraries/event.md
-        - "GUI": libraries/gui.md
-        - "debug": libraries/debug.md
-        - "mouse": libraries/mouse.md
+    - "API Reference": 
+        - api-reference/api-reference.md
+        - "Global Functions": api-reference/globals.md
+        - "Classes": 
+            - "Button": api-reference/classes/class_Button.md
+            - "Camera": api-reference/classes/class_Camera.md
+            - "CheckBox": api-reference/classes/class_CheckBox.md
+            - "Color": api-reference/classes/class_Color.md
+            - "Font": api-reference/classes/class_Font.md
+            - "GUI": api-reference/classes/class_GUI.md
+            - "GUIObject": api-reference/classes/class_GUIObject.md
+            - "GUITexture": api-reference/classes/class_GUITexture.md
+            - "Graph": api-reference/classes/class_Graph.md
+            - "Label": api-reference/classes/class_Label.md
+            - "OnCloseContext": api-reference/classes/class_OnCloseContext.md
+            - "PhysicsObject": api-reference/classes/class_PhysicsObject.md
+            - "ProgressBar": api-reference/classes/class_ProgressBar.md
+            - "Ray": api-reference/classes/class_Ray.md
+            - "RoundedGUI": api-reference/classes/class_RoundedGUI.md
+            - "ScrollPanel": api-reference/classes/class_ScrollPanel.md
+            - "Slider": api-reference/classes/class_Slider.md
+            - "Socket": api-reference/classes/class_Socket.md
+            - "Sound": api-reference/classes/class_Sound.md
+            - "SoundInstance": api-reference/classes/class_SoundInstance.md
+            - "TextBox": api-reference/classes/class_TextBox.md
+            - "TextView": api-reference/classes/class_TextView.md
+            - "Texture": api-reference/classes/class_Texture.md
+            - "TextureButton": api-reference/classes/class_TextureButton.md
+            - "Tile": api-reference/classes/class_Tile.md
+            - "TileRenderer": api-reference/classes/class_TileRenderer.md
+            - "Vector": api-reference/classes/class_Vector.md
+            - "WindowGUI": api-reference/classes/class_WindowGUI.md
+            - "WorldObject": api-reference/classes/class_WorldObject.md
+        - "Libraries": 
+            - "BLF": api-reference/libraries/library_BLF.md
+            - "Camera": api-reference/libraries/library_Camera.md
+            - "Color": api-reference/libraries/library_Color.md
+            - "Console": api-reference/libraries/library_Console.md
+            - "Debug": api-reference/libraries/library_Debug.md
+            - "File": api-reference/libraries/library_File.md
+            - "Font": api-reference/libraries/library_Font.md
+            - "GUI": api-reference/libraries/library_GUI.md
+            - "Mouse": api-reference/libraries/library_Mouse.md
+            - "Ray": api-reference/libraries/library_Ray.md
+            - "Socket": api-reference/libraries/library_Socket.md
+            - "Sound": api-reference/libraries/library_Sound.md
+            - "Texture": api-reference/libraries/library_Texture.md
+            - "Tile": api-reference/libraries/library_Tile.md
+            - "event": api-reference/libraries/library_event.md
+            - "math": api-reference/libraries/library_math.md
+            - "os": api-reference/libraries/library_os.md
+            - "string": api-reference/libraries/library_string.md
+            - "table": api-reference/libraries/library_table.md
+        - "Enums": 
+            - "Alignment": api-reference/enums/enum_Alignment.md
+            - "BLF": api-reference/enums/enum_BLF.md
+            - "BLF Property Type": api-reference/enums/enum_BLF Property Type.md
+            - "Key": api-reference/enums/enum_Key.md
+            - "Log": api-reference/enums/enum_Log.md
+            - "TextureMode": api-reference/enums/enum_TextureMode.md
+        - "Global Events": 
+            - "doPhysics": api-reference/events/event_doPhysics.md
+            - "mouseClick": api-reference/events/event_mouseClick.md
+            - "mouseMove": api-reference/events/event_mouseMove.md
+            - "mouseScroll": api-reference/events/event_mouseScroll.md
+            - "onClose": api-reference/events/event_onClose.md
+            - "passiveInput": api-reference/events/event_passiveInput.md
+            - "postRender": api-reference/events/event_postRender.md
+            - "render": api-reference/events/event_render.md
+            - "screenResize": api-reference/events/event_screenResize.md
 
     - "Tutorials":
         - tutorials/index.md
@@ -37,3 +98,18 @@ theme:
     icon:
         logo: images/logo
     custom_dir: theme
+    palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+

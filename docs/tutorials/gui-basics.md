@@ -4,7 +4,7 @@ GUIs in BlurEngine may seem complicated at first, but it is quite simple once yo
 
 ## Introduction
 
-GUIs are divided into GUI and GUIObject classes [(documented here)](../libraries/gui.md)
+GUIs are divided into [GUI](../api-reference/classes/class_GUI.md) and [GUIObject](../api-reference/classes/class_GUIObject.md) classes.
 
 All GUIs work using a centralized system. This means that for every part of your interface you wish to implement there is 1 GUI class object which serves as a parent to 1 or more GUIObject class children. You **can** have multiple GUIs in a BlurEngine instance.
 
@@ -12,7 +12,7 @@ All GUIs work using a centralized system. This means that for every part of your
 
 Every GUI needs to be instantiated using **gui.new()** or **gui.newObject()**. You will also need to set its size and position. To see all kinds of GUIs and GUIObjects, look up **GUI** and **GUIObject**.
 
-Here is a code example demonstarting this, where we will be making a simple button and text script:
+Here is a code example demonstarting this, where we will be making a simple [button](../api-reference/classes/class_Button.md) and text script:
 
 ```lua
 mainGUI = gui.new("GUI")
@@ -51,6 +51,6 @@ Simple, right?
 
 Here's the result of our code:
 
-<img src="..\..\docs\images\guiexample.png" alt="image-20210820225258533" align="left"  />
+<img src="../images/guiexample.png" alt="GUI Example" align="left"  />
 
-This is a basic GUI, you can't interact with it yet and it doesn't look too pretty. To see how to do other things like changing fonts or adding button functions, check out the [GUI class.](../classes.md#gui)
+This is a basic GUI, you can't interact with it yet and it doesn't look too pretty. To see how to do other things like changing fonts or adding button functions, check out the [GUI class.](../api-reference/classes/class_GUI.md)
